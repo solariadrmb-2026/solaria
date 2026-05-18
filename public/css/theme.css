@@ -17,4 +17,15 @@
   --menu-hover: #1b5e20;
   --menu-text: #ffffff;
 
-  --nav
+  --navbar-height: 56px;
+  --menu-radius: 4px;
+  --menu-gap-desktop: 12px;
+  --menu-gap-mobile: 6px;
+
+  --btn-auto-bg: #1976d2;
+  --btn-manual-bg: #616161;
+  --btn-on-bg: #4caf50;
+  --btn-off-bg: #e53935;
+  --btn-exit-bg: #b6aa0b;
+  --btn-text: #ffffff;
+  --btn-radius: 14px;
