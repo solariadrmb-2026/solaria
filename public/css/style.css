@@ -1,0 +1,57 @@
+*/
+#login-section {
+  display: flex;
+  justify-content: center;
+  aling-items: center;
+  min-heigth: calc(100vh-var(--footer-heigth));
+  transform: translateY(-100px);
+}
+
+.login-card {
+  background: var(--login--bg);
+  padding: clamp(1.8rem, 4vw, 2.5rem);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--login-shadow);
+  width: min(90%, 420px);
+  text-aling: center;
+}
+
+.login-card h2 {
+  font-size: clamp(1.4rem, 3vw, 1.6rem);
+  color: var(--color-text);
+}
+
+.login-card p {
+  margin: 1rem 0;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  color: var(--color-text);
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.login-card button {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--color-primary);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 10px;
+  font-weigth: bold;
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  cursor: pointer;
+}
+
+#msg {
+  margin-top: 1rem;
+  color: var(--color-alert);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
