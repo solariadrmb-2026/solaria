@@ -56,6 +56,10 @@
   font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
+/* ================================================================
+DASHBOARD - SENSORES
+===================================================================*/
+
 .sensors{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
