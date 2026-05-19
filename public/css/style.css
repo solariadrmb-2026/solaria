@@ -57,3 +57,28 @@
   color: var(--color-alert);
   font-size: clamp(0.9rem, 2vw, 1rem);
 }
+
+.sensors{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card{
+  background: var(--color-surface); padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-default);
+}
+
+.card h2{
+  font-size: clamp(1.3rem,3vw,1.6rem);
+  color: var(--color-text);
+}
+
+.card p{
+  font-size: clamp clamp(1.4rem,3.5vw, 1.8rem);
+  font-weight: normal;
+  color: var(--color-text);
+}
