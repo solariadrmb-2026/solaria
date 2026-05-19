@@ -1,0 +1,11 @@
+:root {
+    --menu-radius: 4px;
+    --menu-padding-y: 10px;
+    --menu-padding-x: 14px;
+
+    --menu-gap-desktop: 12px;
+    --menu-gap-mobile: 6px;
+
+    --navbar-height: 56px;
+    --menu-transition: 0.25s ease;
+}
