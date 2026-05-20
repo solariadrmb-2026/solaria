@@ -213,5 +213,30 @@ PÀGINAS CONTATOS
   margin: 0 auto;
 }
 
+/* ================================================================
+RODAPÈ GLOBAL - body::after
+===================================================================*/
+body::after {
+  content: "© 2026 - Solaria | Projeto Educacional | </SEDUCKATHON> | CDRMB";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--footer-heigth);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  z-index: 1000;
+
+  transition: background-color var(--transition-default);
+  color: var(--transition-default);
+}
+
+
 
 
