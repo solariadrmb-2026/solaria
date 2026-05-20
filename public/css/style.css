@@ -198,4 +198,20 @@ PÀGINAS PÙBLICAS - TEXTO
   text-align: justify;
 }
 
+/* ================================================================
+PÀGINAS CONTATOS
+===================================================================*/
+.pagina-contatos h1,
+.pagina-contatos h2,
+.pagina-contatos .texto-sistema,
+.pagina-contatos p {
+  text-align: center;
+}
+
+.pagina-contatos .item {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
 
