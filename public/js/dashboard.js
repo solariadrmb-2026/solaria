@@ -37,9 +37,9 @@ snap =>
 onValue(ref(db, "solaria/controle"), snap => {
  const c = snap.val() || {};
 
- atualizarTexto("modo", c.modo === true? "AUTOMÁTICO" : "MANUAL");
+ atualizarTexto("modo", c.modo === true? "🖥️ AUTOMÁTICO" : "✋ MANUAL");
   atualizarTexto("estadoBomba", c.bomba === true ? 
-    " LIGADA " : " DESLIGADA ");
+    "🟢 LIGADA " : "🔴 DESLIGADA ");
 
     // Bloqueio de botões no modo automático 
     const btnLigar = 
@@ -99,16 +99,15 @@ document.querySelector(".desligar");
         const luxFormatado = Number(valor).toFixed(1);
 
         el.innerText = 
-    ${luxFormatado}${sufixo}${classificação} ;
+    `${luxFormatado}${sufixo}${classificação}`;
         return;
-    }
+  }
 
     // Para demais sensores 
-    el.innerText = ${valor}${sufixo} ;
+    el.innerText = `${valor}${sufixo}`;
 }
 
 function atualizarTexto(id, texto) {
     const el = document.getElementById(id);
     if (el) el.innerText = texto;
 }
-         
