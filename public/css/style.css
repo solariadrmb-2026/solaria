@@ -17,8 +17,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  transition: background-color var(--transition-default);
-  color: var(--transition-default);
+  transition: background-color var(--transition-default),
+    color var(--transition-default);
 }
 
 /* ==================================================
@@ -45,7 +45,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - var(--footer-heigth));
+  min-height: calc(100vh - var(--footer-height));
   transform: translateY(-100px);
 }
 
@@ -222,7 +222,7 @@ body::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: var(--footer-heigth);
+  height: var(--footer-height);
 
   display: flex;
   align-items: center;
@@ -254,7 +254,7 @@ MOBILE - AJUSTES GERAIS
   }
 
   .container {
-    padding-bottom: calc(var(--footer-heigth) + 72px);
+    padding-bottom: calc(var(--footer-height) + 72px);
   }
 
   body::after {
