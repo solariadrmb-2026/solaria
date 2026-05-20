@@ -1,5 +1,6 @@
 <nav class="navbar" > 
 
+  <!-- LOGO + DARK -->
   <div class="nav-left>
      <a href= "index.html" class="logo"> solaria </a>
 
@@ -9,5 +10,46 @@
    aria-label="Alternar tema">
 </button>
   </div>
+
+  <!-- BOTÃO MENU MOBILE -->
+  <button class="menu toggle" aria-label="Abrir menu">
+    <span></span>
+    <sapn></sapn>
+    <span></span>
+  </button>
+
+  <!-- MENU -->
+   <ul class="menu">
+    <li>
+      <a href="index.html">Início</a>
+    </li>
+
+    <!-- DASHBOARD (usuário logado) -->
+     <li class="painel-item" style="display:none;">
+      <a href="dashboard.html">Controle</a>
+     </li>
+
+     <!-- PAINEL ADMIN (somente admin) -->
+      <li class="dropdown">
+        <button class="submenu-toggle" aria-haspopup="true"></button>
+        <ul class="submenu">
+          <li><a href="sistema.html">Sobre o sistema</a></li>
+          <li><a href="projeto.html">Sobre o projeto</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="equipe.html">Equipe</a>
+      </li>
+      <li>
+        <a href="contatos.html">Contatos</a>
+      </li>
+      <li>
+      </li>
+   </ul>
+</nav>
+   
+
+
   
   
