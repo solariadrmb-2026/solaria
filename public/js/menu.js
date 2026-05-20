@@ -82,19 +82,19 @@ document.addEventListener("DOMContentLoaded", () => {
         /* ================================================
         CONTROLE DE ACESSO (Firebase)
         =============================================== */
-        if (dashboardItem) dashboardItem.computedStyleMap.display = "none";
-        if (adminItem) adminItem.computedStyleMap.display = "none";
+        if (dashboardItem) dashboardItem.style.display = "none";
+        if (adminItem) adminItem.style.display = "none";
 
         onAuthStateChanged( auth, async user => {
 
             // Dashboard: usuário logado
                   if (dashboardItem) {
-                    dashboardItem.computedStyleMap.display = user ? "list-item" : "none";
+                    dashboardItem.style.display = user ? "list-item" : "none";
                   }
 
                   //Admin
                           if (!user || !adminItem) {
-                            if (adminItem) adminItem.computedStyleMap.display = "none";
+                            if (adminItem) adminItem.style.display = "none";
                             return;
                           }
 
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             const snap = await get(ref(db, 'users/${user.uid}'));
                             const data = snap.val();
                             const isAdmin = data && data.role === "admin";
-                            adminItem.computedStyleMap.display = isAdmin ? "list-item" : "none";
+                            adminItem.style.display = isAdmin ? "list-item" : "none";
                           } catch (err) {
                             console.error("Erro ao verificar admin:", err);
                             adminItem.style.display = "none";
