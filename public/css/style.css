@@ -237,6 +237,29 @@ body::after {
   color: var(--transition-default);
 }
 
+/* ================================================================
+MOBILE - AJUSTES GERAIS 
+===================================================================*/
+@media(max-width:768px) {
+  .card p {
+    font-size: 1.1rem;
+  }
 
+  .sensors {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .btn-group {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .container {
+    padding-bottom: calc(var(--footer-heigth) + 72px);
+  }
+
+  body::after {
+    text-align: center;
+  }
+}
 
 
