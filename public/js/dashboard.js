@@ -6,7 +6,7 @@ from
 "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { ref, onValue, set }
 from 
-"https;//www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
 // ================= PROTEÇÃO DE ROTA =====================
 onAuthStateChanged( auth, user => { 

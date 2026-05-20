@@ -1,30 +1,32 @@
-/*==================================================
+/* ==================================================
 THEME.CSS - VARIÁVEIS GLOBAIS
-====================================================*/
+================================================== */
 
-/*========================== TEMA CLARO======================*/
+/* ===================================================
+TEMA CLARO 
+==================================================== */
 
 :root, 
 body.theme-light{
 
-  /*========= BASE=======*/
+  /*========= BASE =======*/
   --color-bg: #e8f5e9;
   --color-text: #1b1b1b;
 
-/*========= CORES PRINCIPAIS======*/
+/*========= CORES PRINCIPAIS ======*/
   --color-primary: #2e7d32;
   --color-primary-hover: #0c500f;
   --color-alert: #e53935;
 
-/*===== SUPERFÍCIES=======*/
+/*===== SUPERFÍCIES =======*/
   --color-surface: #ffffff;
   --color-border: #cccccc;
 
-/*=====EFEITOS=====*/
+/*===== EFEITOS =====*/
   --shadow-default: 0 4px 10px rgba(0, 128, 0, 0.25);
   --transition-default: 0.3s ease;
 
-/*====== MENU/NAVBAR======*/
+/*====== MENU/NAVBAR ======*/
   --menu-bg: #2e7d32;
   --menu-bg-secondary: #388e3c;
   --menu-hover: #1b5e20;
@@ -35,7 +37,7 @@ body.theme-light{
   --menu-gap-desktop: 12px;
   --menu-gap-mobile: 6px;
 
-  /*======= BOTÕES=======*/
+  /*======= BOTÕES =======*/
   --btn-auto-bg: #1976d2;
   --btn-manual-bg: #616161;
   --btn-on-bg: #4caf50;
@@ -44,23 +46,23 @@ body.theme-light{
   --btn-text: #ffffff;
   --btn-radius: 14px;
 
-  /*======LOGIN======*/
+  /*====== LOGIN ======*/
   --login-bg: var(--color-surface);
   --login-shadow: 0 6px 15px rgba(0, 128, 0, o.25);
 
-  /*=======RODAPÉ========*/
+  /*======= RODAPÉ ========*/
   --footer-bg: var(--menu-bg);
   --footer-text: var(--menu-text);
   --footer-height: 48px;
 }
-/*=========TEMA DARK==============*/
+/*========= TEMA DARK ==============*/
 body.theme-dark{
 
   /*=====BASE=====*/
   --color-bg: #979696;
   --color-text: #f8f8f8;
 
-  /*===== CORES PRINCIPAIS======*/
+  /*===== CORES PRINCIPAIS ======*/
   --color-primary: #0a0a0a;
   --color-primary-hover: #b2b4b2;
   --color-alert: #000500;
@@ -68,17 +70,17 @@ body.theme-dark{
   --color-surface: #1e1e1e;
   --color-border: #333333;
 
-/*======= EFEITOS======*/
+/*======= EFEITOS ======*/
   --shadow-default: none;
   --transition-default: 0.3s ease;
 
-/*===== MENU/NAVBAR=====*/
+/*===== MENU/NAVBAR =====*/
   --menu-bg: #1e1e1e;
   --menu-bg-secondary: #2a2a2a;
   --menu-hover: #333333;
   --menu-text: #979494;
 
-/*=====BOTÕES=====*/
+/*===== BOTÕES =====*/
   --btn-auto-bg: #010d1d;
   --btn-manual-bg: #050505;
   --btn-on-bg: #010801;
@@ -87,11 +89,11 @@ body.theme-dark{
   --btn-text: #ffffff;
   --btn-radius: 14px;
 
-/*=====LOGIN====*/
+/*===== LOGIN ====*/
   --login-bg: var(--color-surface);
   --login-shadow: none;
 
-  /*======= RODAPÉ========*/
+  /*======= RODAPÉ ========*/
   --footer-bg: var(--menu-bg);
   --footer-text: var(--menu-text);
 }
