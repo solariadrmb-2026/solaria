@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     applyTheme(currentTheme);
     toggle.textContent = currentTheme.icon;
 
-    /*===============================
+    /*=============================
     ALTERNAR TEMA
     =============================*/
     toggle.addEventListener("click",()=> {
