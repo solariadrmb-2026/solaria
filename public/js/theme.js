@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     const THEMES=[
         { class:"theme-light",icon:},//padrão
-        { class: "theme-dark", icon}
+        { class: "theme-dark", icon:}
     ];
 
     function applyTheme(theme) {
