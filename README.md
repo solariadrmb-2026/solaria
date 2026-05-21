@@ -115,7 +115,7 @@ Equipe de Desenvolvimento
 
 Alunas do CETI Dona Rosaura Muniz Barreto:
 
-Enedina Aparecida Duarte de Jesus Lima, Laura Beatriz Gomes de Sousa, Maria Eduarda Tavares Soares, Maria de Fátima Araújo Cardoso e Maria Gizele Rodrigues da Silva.
+Enedina Aparecida Duarte de Jesus Lima, Laura Beatriz Gomes de Sousa, Maria de Fátima Araújo Cardoso,Maria Eduarda Tavares Soares e Maria Gizele Rodrigues da Silva.
 
 Licença
 
