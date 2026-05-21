@@ -209,7 +209,7 @@ ANIMAÇÃO HAMBURGUER -> X
 MOBILE
 ============================================================ */
 
-@media (max=width: 768px) {
+@media (max-width: 768px) {
 
     /*Botão hamburguer aparece*/
     .menu-toggle{
