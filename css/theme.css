@@ -11,7 +11,7 @@ body.theme-light{
 
   /*========= BASE =======*/
   --color-bg: #e8f5e9;
-  --color-text: #ffffff;
+  --color-text: #302e2e;
 
 /*========= CORES PRINCIPAIS ======*/
   --color-primary: #2e7d32;
@@ -78,7 +78,7 @@ body.theme-dark{
   --menu-bg: #1e1e1e;
   --menu-bg-secondary: #2a2a2a;
   --menu-hover: #333333;
-  --menu-text: #ffffff;
+  --menu-text: #9b9696;
 
 /*===== BOTÕES =====*/
   --btn-auto-bg: #010d1d;
