@@ -193,7 +193,7 @@ BOTÃO HAMBURGUER
 ANIMAÇÃO HAMBURGUER -> X
 ============================================================ */
 
-.menu-toggle.active span:nht-child(1) {
+.menu-toggle.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
 
