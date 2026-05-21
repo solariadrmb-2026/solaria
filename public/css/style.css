@@ -17,8 +17,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  transition: background-color var(--transition-default);
-  color: var(--transition-default);
+  transition: background-color var(--transition-default),
+    color var(--transition-default);
 }
 
 /* ==================================================
@@ -45,7 +45,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - var(--footer-heigth));
+  min-height: calc(100vh - var(--footer-height));
   transform: translateY(-100px);
 }
 
@@ -102,7 +102,7 @@ h1{
 DASHBOARD - SENSORES
 ===================================================================*/
 
-.sensors{
+.sensors {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
@@ -217,12 +217,12 @@ PÀGINAS CONTATOS
 RODAPÈ GLOBAL - body::after
 ===================================================================*/
 body::after {
-  content: "© 2026 - Solaria | Projeto Educacional | </SEDUCKATHON> | CDRMB";
+  content: "© 2026 - Solaria | Projeto Educacional | </DO PIAUÍ PARA O MUNDO> | CDRMB";
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: var(--footer-heigth);
+  height: var(--footer-height);
 
   display: flex;
   align-items: center;
@@ -237,6 +237,29 @@ body::after {
   color: var(--transition-default);
 }
 
+/* ================================================================
+MOBILE - AJUSTES GERAIS 
+===================================================================*/
+@media(max-width:768px) {
+  .card p {
+    font-size: 1.1rem;
+  }
 
+  .sensors {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .btn-group {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .container {
+    padding-bottom: calc(var(--footer-height) + 72px);
+  }
+
+  body::after {
+    text-align: center;
+  }
+}
 
 
