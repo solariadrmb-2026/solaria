@@ -22,7 +22,8 @@ O projeto integra conhecimentos de:
 - Banco de Dados em Tempo Real
 
 Sobre o Projeto
-O Solaria é um sistema desenvolvido para auxiliar no controle e monitoramento de uma horta automatizada, ou na agricultura família, permitindo acompanhar:
+
+O Solaria é um sistema desenvolvido para auxiliar no controle e monitoramento de uma horta automatizada, ou na agricultura familiar, permitindo acompanhar:
 - Umidade do solo
 - Luminosidade
 - Temperatura
