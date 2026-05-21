@@ -118,7 +118,7 @@ Texto/ícone inserido via menu.js
 }
 
 .dark-toggle:hover {
-    opacity:0.8;
+    opacity: 0.8;
 }
 
 .dark-toggle:active {
@@ -136,8 +136,7 @@ Texto/ícone inserido via menu.js
 SUBMENU - DESKTOP
 ========================================================== */
 
-.submenu{
-
+.submenu {
     display: none;
     position: absolute;
     top: 100%;
@@ -210,7 +209,7 @@ ANIMAÇÃO HAMBURGUER -> X
 MOBILE
 ============================================================ */
 
-@media (max-width: 768px) {
+@media (max=width: 768px) {
 
     /*Botão hamburguer aparece*/
     .menu-toggle{
