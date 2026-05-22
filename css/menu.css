@@ -1,3 +1,9 @@
+/*=======================================================
+MENU.CSS - ESTRUTURA DO MENU
+✔ NÃO define cores
+✔ Consome variáveis do theme.css
+========================================================*/
+
 /* ======================================================
 VARIÁVEIS ESTRUTURAIS (NÃO VISUAIS)
 ====================================================== */
@@ -14,42 +20,39 @@ VARIÁVEIS ESTRUTURAIS (NÃO VISUAIS)
     --menu-transition: 0.25s ease;
 }
 
-/* =====================================================
-RESET LOCAL
-==================================================== */
-
+/* ===== RESET ===== */
 * {
     box-sizing: border-box;
 }
 
+/*===== FLEX PADRÃO =====*/
+.navbar,
+.nav-left,
+.dark-toggle {
+    display: flex;
+    align-items: center;
+}
+
 /* ======================================================
-NAVBAR (BARRA SUPERIOR + LOGO)
+NAVBAR
 ====================================================== */
 
 .navbar {
     height: var(--navbar-height);
-    background: var(--menu-bg);           /* theme.css*/
-    display: flex;
-    align-items: center;
+    background: var(--menu-bg);          
     justify-content: space-between;
     padding: 0 16px;
     position: relative;
     z-index: 1000;
 }
 
-/* ======================================================
-AGRUPAMENTO LOGO + BOTÃO DARK
-====================================================== */
+/* ===== LOGO + DARK ===== */
 
 .nav-left {
-    display: flex;
-    align-items: center;
     gap: 10px;
 }
 
-/* =======================================================
-LOGO
-======================================================== */
+/* ===== LOGO ===== */
 
 .logo {
     color: var(--menu-text);
@@ -87,13 +90,14 @@ LINKS E BOTÕES DO MENU
 
     padding: var(--menu-padding-y) var(--menu-padding-x);
     border-radius: var(--menu-radius);
+
     transition: background var(--menu-transition);
     white-space: nowrap;
 }
 
 .menu a:hover,
 .menu button:hover {
-    background: var(--menu-hover);          /*theme.css*/
+    background: var(--menu-hover);          
 }
 
 /* ===========================================================
@@ -104,17 +108,16 @@ Texto/ícone inserido via menu.js
 .dark-toggle {
     background: transparent;
     border: none;
-    box-shadow: none;
-    outline: none;
-    color: var(--menu-text);                 /*theme.css*/
+    color: var(--menu-text);                
+
     font-size: 18px;
     cursor: pointer;
     padding: 6px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    transition: opacity var(--menu-transition),
-            transform var(--menu-transition);
+
+    transition: 
+      opacity var(--menu-transition),
+      transform var(--menu-transition);
 }
 
 .dark-toggle:hover {
@@ -125,11 +128,8 @@ Texto/ícone inserido via menu.js
     transform: scale(0.9);
 }
 
-.dark-toggle:focus,
-.dark-toggle:active {
-    background: transparent;
+.dark-toggle:focus {
     outline: none;
-    box-shadow: none;
 }
 
 /* ==========================================================
@@ -139,14 +139,18 @@ SUBMENU - DESKTOP
 .submenu {
     display: none;
     position: absolute;
+
     top: 100%;
     left: 0;
 
     min-width: 200px;
-    background: var(--menu-bg-secondary);  /*theme.css*/
+
+    background: var(--menu-bg-secondary);  
 
     padding: 8px;
+
     border-radius: var(--menu-radius);
+
     z-index: 999;
 
     flex-direction: column;
@@ -182,10 +186,15 @@ BOTÃO HAMBURGUER
 
 .menu-toggle span {
     display: block;
+
     width: 26px;
+
     height: 3px;
-    background: var(--menu-text);             /*theme.css*/
+
+    background: var(--menu-text);       
+
     margin: 5px 0;
+
     transition: all 0.3s ease;
 }
 
@@ -211,24 +220,27 @@ MOBILE
 
 @media (max-width: 768px) {
 
-    /*Botão hamburguer aparece*/
+    /*==== HAMBURGUER ====*/
     .menu-toggle{
         display: block;
     }
 }
 
-/* Menu lateral*/
+/*==== MENU MOBILE ====*/
 .menu{
     display: none;
     position: absolute;
+
     top: var(--navbar-height);                        
     right: 0;
 
     width: 240px;
-    background: var(--menu-bg);                   /*theme.css*/
+
+    background: var(--menu-bg);                  
 
     flex-direction: column;
     align-items: flex-start;
+
     gap: var(--menu-gap-mobile);
 
     padding: 16px;
@@ -247,15 +259,12 @@ MOBILE
 .menu button {
     display: flex;
     align-items: center;
+
     width: 100%;
     min-height: 36px;
+
     padding: 6px 12px;
     text-align: left;
-}
-
-.menu li a:hover,
-.menu li button:hover {
-    background: var(--menu-hover);                 /*theme.css*/
 }
 
 /* ===========================================================
@@ -267,7 +276,8 @@ SUBMENU - MOBILE (ACCORDION)
     display: none;
 
     width: 100%;
-    background: var(--menu-bg-secondary);           /*theme.css*/
+
+    background: var(--menu-bg-secondary);          
 
     margin-top: 6px;
     padding: 6px 8px;
@@ -282,7 +292,8 @@ SUBMENU - MOBILE (ACCORDION)
     display: flex;
 }
 
-/*Botão dark um pouco maior no mobile*/
+/*==== DARK MOBILE ====*/
 .dark-toggle {
     font-size: 20px;
 }
+
