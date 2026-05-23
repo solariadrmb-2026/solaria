@@ -39,7 +39,9 @@ NAVBAR
 
 .navbar {
     height: var(--navbar-height);
-    background: var(--menu-bg);          
+    background: var(--menu-bg);   
+    display: flex;
+    align-items: center;       
     justify-content: space-between;
     padding: 0 16px;
     position: relative;
@@ -49,6 +51,8 @@ NAVBAR
 /* ===== LOGO + DARK ===== */
 
 .nav-left {
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -108,15 +112,16 @@ Texto/ícone inserido via menu.js
 .dark-toggle {
     background: transparent;
     border: none;
+    box-shadow: none;
+    outline: none;
     color: var(--menu-text);                
-
     font-size: 18px;
     cursor: pointer;
     padding: 6px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-
-    transition: 
-      opacity var(--menu-transition),
+    transition: opacity var(--menu-transition),
       transform var(--menu-transition);
 }
 
@@ -128,8 +133,11 @@ Texto/ícone inserido via menu.js
     transform: scale(0.9);
 }
 
-.dark-toggle:focus {
+.dark-toggle:focus,
+.dark-toggle:active {
+    background: transparent;
     outline: none;
+    box-shadow: none;
 }
 
 /* ==========================================================
@@ -139,18 +147,14 @@ SUBMENU - DESKTOP
 .submenu {
     display: none;
     position: absolute;
-
     top: 100%;
     left: 0;
 
     min-width: 200px;
-
     background: var(--menu-bg-secondary);  
 
     padding: 8px;
-
     border-radius: var(--menu-radius);
-
     z-index: 999;
 
     flex-direction: column;
@@ -168,7 +172,7 @@ HOVER DESKTOP
 =========================================================== */
 
 @media (min-width: 769px) {
-    .dropdown:hover>.submenu {
+    .dropdown:hover > .submenu {
         display: flex;
     }
 }
@@ -186,15 +190,10 @@ BOTÃO HAMBURGUER
 
 .menu-toggle span {
     display: block;
-
     width: 26px;
-
     height: 3px;
-
     background: var(--menu-text);       
-
     margin: 5px 0;
-
     transition: all 0.3s ease;
 }
 
@@ -206,11 +205,11 @@ ANIMAÇÃO HAMBURGUER -> X
     transform: translateY(8px) rotate(45deg);
 }
 
-.menu-toggle.active span:nth-child(2){
+.menu-toggle.active span:nth-child(2) {
     opacity: 0;
 }
 
-.menu-toggle.active span:nth-child(3){
+.menu-toggle.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -259,6 +258,11 @@ MOBILE
     text-align: left;
 }
 
+.menu li a:hover,
+.menu li button:hover {
+    background: var(--menu-hover);
+}
+
 /* ===========================================================
 SUBMENU - MOBILE (ACCORDION)
 ========================================================== */
@@ -283,4 +287,5 @@ SUBMENU - MOBILE (ACCORDION)
 .dark-toggle {
     font-size: 20px;
 }
+
 
