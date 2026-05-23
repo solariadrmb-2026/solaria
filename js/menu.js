@@ -4,8 +4,7 @@ import { onAuthStateChanged }
 from
 "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { ref, get }
-from
-"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -21,8 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(html => {
 
-        const container =
-    document.getElementById("menu");
+        const container = document.getElementById("menu");
         if (!container) return;
 
         container.innerHTML = html;
@@ -32,13 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
         ================================================= */
         const toggle = container.querySelector(".menu-toggle");
         const menu = container.querySelector(".menu");
-        const submenuToggles =
-    container.querySelectorAll(".submenu-toggle");
+        const submenuToggles = container.querySelectorAll(".submenu-toggle");
 
-        const dashboardItem =
-    container.querySelector(".painel-item");
-        const adminItem =
-    container.querySelector(".admin.item");
+        const dashboardItem = container.querySelector(".painel-item");
+        const adminItem = container.querySelector(".admin-item");
 
         /* ================================================
         MENU MOBILE
