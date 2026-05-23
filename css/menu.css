@@ -1,291 +1,280 @@
-/*=======================================================
-MENU.CSS - ESTRUTURA DO MENU
-✔ NÃO define cores
-✔ Consome variáveis do theme.css
-========================================================*/
-
-/* ======================================================
-VARIÁVEIS ESTRUTURAIS (NÃO VISUAIS)
-====================================================== */
-
+/* =================================================
+   MENU.CSS – ESTRUTURA DO MENU
+   ✔ NÃO define cores
+   ✔ Consome variáveis do theme.css
+================================================= */
+/* =================================================
+   VARIÁVEIS ESTRUTURAIS (NÃO VISUAIS)
+================================================= */
 :root {
-    --menu-radius: 4px;
-    --menu-padding-y: 10px;
-    --menu-padding-x: 14px;
+  --menu-radius: 4px;
+  --menu-padding-y: 10px;
+  --menu-padding-x: 14px;
 
-    --menu-gap-desktop: 12px;
-    --menu-gap-mobile: 6px;
+  --menu-gap-desktop: 12px;
+  --menu-gap-mobile: 6px;
 
-    --navbar-height: 56px;
-    --menu-transition: 0.25s ease;
+  --navbar-height: 56px;
+  --menu-transition: 0.25s ease;
 }
 
-/* ===== RESET ===== */
+/* =================================================
+   RESET LOCAL
+================================================= */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/*===== FLEX PADRÃO =====*/
-.navbar,
-.nav-left,
-.dark-toggle {
-    display: flex;
-    align-items: center;
-}
-
-/* ======================================================
-NAVBAR
-====================================================== */
-
+/* =================================================
+   NAVBAR (BARRA SUPERIOR + LOGO)
+================================================= */
 .navbar {
-    height: var(--navbar-height);
-    background: var(--menu-bg);   
-    display: flex;
-    align-items: center;       
-    justify-content: space-between;
-    padding: 0 16px;
-    position: relative;
-    z-index: 1000;
+  height: var(--navbar-height);
+  background: var(--menu-bg);              /* theme.css */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  position: relative;
+  z-index: 1000;
 }
 
-/* ===== LOGO + DARK ===== */
-
+/* =================================================
+   AGRUPAMENTO LOGO + BOTÃO DARK
+================================================= */
 .nav-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* ===== LOGO ===== */
-
+/* =================================================
+   LOGO
+================================================= */
 .logo {
-    color: var(--menu-text);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
+  color: var(--menu-text);                 /* theme.css */
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-/* =======================================================
-MENU DESKTOP
-======================================================= */
-
+/* =================================================
+   MENU DESKTOP
+================================================= */
 .menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: var(--menu-gap-desktop);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--menu-gap-desktop);
 }
 
 .menu li {
-    position: relative;
+  position: relative;
 }
 
-/* =======================================================
-LINKS E BOTÕES DO MENU
-======================================================= */
-
+/* =================================================
+   LINKS E BOTÕES DO MENU
+================================================= */
 .menu a,
 .menu button {
-    color: var(--menu-text);
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
+  color: var(--menu-text);                 /* theme.css */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 
-    padding: var(--menu-padding-y) var(--menu-padding-x);
-    border-radius: var(--menu-radius);
+  padding: var(--menu-padding-y) var(--menu-padding-x);
+  border-radius: var(--menu-radius);
 
-    transition: background var(--menu-transition);
-    white-space: nowrap;
+  transition: background var(--menu-transition);
+  white-space: nowrap;
 }
 
 .menu a:hover,
 .menu button:hover {
-    background: var(--menu-hover);          
+  background: var(--menu-hover);           /* theme.css */
 }
 
-/* ===========================================================
-BOTÃO DE TROCA DE TEMA (DARK MODE) 
-Texto/ícone inserido via menu.js
-=========================================================== */
-
+/* =================================================
+   BOTÃO DE TROCA DE TEMA (DARK MODE)
+   Texto/ícone inserido via menu.js
+================================================= */
 .dark-toggle {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    outline: none;
-    color: var(--menu-text);                
-    font-size: 18px;
-    cursor: pointer;
-    padding: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity var(--menu-transition),
-      transform var(--menu-transition);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  color: var(--menu-text);                 /* theme.css */
+  font-size: 18px;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity var(--menu-transition),
+              transform var(--menu-transition);
 }
 
 .dark-toggle:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .dark-toggle:active {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .dark-toggle:focus,
 .dark-toggle:active {
-    background: transparent;
-    outline: none;
-    box-shadow: none;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
 }
 
-/* ==========================================================
-SUBMENU - DESKTOP
-========================================================== */
-
+/* =================================================
+   SUBMENU – DESKTOP
+================================================= */
 .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
 
-    min-width: 200px;
-    background: var(--menu-bg-secondary);  
+  min-width: 200px;
+  background: var(--menu-bg-secondary);    /* theme.css */
 
-    padding: 8px;
-    border-radius: var(--menu-radius);
-    z-index: 999;
+  padding: 8px;
+  border-radius: var(--menu-radius);
+  z-index: 999;
 
-    flex-direction: column;
-    gap: 6px;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .submenu a {
-    display: block;
-    width: 100%;
-    text-align: left;
+  display: block;
+  width: 100%;
+  text-align: left;
 }
 
-/* ===========================================================
-HOVER DESKTOP
-=========================================================== */
-
+/* =================================================
+   HOVER DESKTOP
+================================================= */
 @media (min-width: 769px) {
-    .dropdown:hover > .submenu {
-        display: flex;
-    }
+  .dropdown:hover > .submenu {
+    display: flex;
+  }
 }
 
-/* ===========================================================
-BOTÃO HAMBURGUER
-=========================================================== */
-
+/* =================================================
+   BOTÃO HAMBURGUER
+================================================= */
 .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .menu-toggle span {
-    display: block;
-    width: 26px;
-    height: 3px;
-    background: var(--menu-text);       
-    margin: 5px 0;
-    transition: all 0.3s ease;
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--menu-text);            /* theme.css */
+  margin: 5px 0;
+  transition: all 0.3s ease;
 }
 
-/* ============================================================
-ANIMAÇÃO HAMBURGUER -> X
-============================================================ */
-
+/* =================================================
+   ANIMAÇÃO HAMBURGUER → X
+================================================= */
 .menu-toggle.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .menu-toggle.active span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
-/* =============================================================
-MOBILE
-============================================================ */
-
+/* =================================================
+   MOBILE
+================================================= */
 @media (max-width: 768px) {
 
-    /*==== HAMBURGUER ====*/
-    .menu-toggle{
-        display: block;
-    }
-}
+  /* Botão hamburguer aparece */
+  .menu-toggle {
+    display: block;
+  }
 
-/*==== MENU MOBILE ====*/
-.menu{
+  /* Menu lateral */
+  .menu {
     display: none;
     position: absolute;
-    top: var(--navbar-height);                        
+    top: var(--navbar-height);
     right: 0;
+
     width: 240px;
-    background: var(--menu-bg);                  
+    background: var(--menu-bg);            /* theme.css */
+
     flex-direction: column;
     align-items: flex-start;
     gap: var(--menu-gap-mobile);
+
     padding: 16px;
     border-radius: var(--menu-radius);
-}
+  }
 
-.menu.show {
+  .menu.show {
     display: flex;
-}
+  }
 
-.menu li {
+  .menu li {
     width: 100%;
-}
+  }
 
-.menu a,
-.menu button {
+  .menu a,
+  .menu button {
     display: flex;
     align-items: center;
     width: 100%;
     min-height: 36px;
     padding: 6px 12px;
     text-align: left;
-}
+  }
 
-.menu li a:hover,
-.menu li button:hover {
-    background: var(--menu-hover);
-}
+  .menu li a:hover,
+  .menu li button:hover {
+    background: var(--menu-hover);         /* theme.css */
+  }
 
-/* ===========================================================
-SUBMENU - MOBILE (ACCORDION)
-========================================================== */
-
-.submenu {
+  /* =================================================
+     SUBMENU – MOBILE (ACCORDION)
+  ================================================= */
+  .submenu {
     position: static;
     display: none;
+
     width: 100%;
-    background: var(--menu-bg-secondary);          
+    background: var(--menu-bg-secondary);  /* theme.css */
+
     margin-top: 6px;
     padding: 6px 8px;
+
     border-radius: var(--menu-radius);
+
     flex-direction: column;
     gap: 6px;
-}
+  }
 
-.submenu.show {
+  .submenu.show {
     display: flex;
-}
+  }
 
-/*==== DARK MOBILE ====*/
-.dark-toggle {
+  /* Botão dark um pouco maior no mobile */
+  .dark-toggle {
     font-size: 20px;
+  }
 }
-
-
