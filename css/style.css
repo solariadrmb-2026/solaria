@@ -1,3 +1,8 @@
+/*=======================================================
+STYLE.CSS - ESTRUTURA A TRASBOARD/PÁGINAS PÚLICAS
+✔ NÃO define cores
+✔ Consome variáveis do theme.css
+========================================================*/
 /* ==================================================
    RESET GLOBAL
 ================================================== */
@@ -17,8 +22,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  transition: background-color var(--transition-default),
-    color var(--transition-default);
+  transition: background-color var(--transition-default);
 }
 
 /* ==================================================
@@ -110,7 +114,8 @@ DASHBOARD - SENSORES
 }
 
 .card{
-  background: var(--color-surface); padding: 1.5rem;
+  background: var(--color-surface); 
+  padding: 1.5rem;
   border-radius: 12px;
   text-align: center;
   box-shadow: var(--shadow-default);
@@ -122,7 +127,7 @@ DASHBOARD - SENSORES
 }
 
 .card p{
-  font-size: clamp clamp(1.4rem,3.5vw, 1.8rem);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   font-weight: normal;
   color: var(--color-text);
 }
@@ -135,7 +140,7 @@ STATUS DA BOMBA
 }
 
 .status p{
-  font-size: clamp(1rem, 2.5w, 1.2rem);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: var(--color-text);
 }
 
@@ -157,8 +162,8 @@ BOTÕES DO SISTEMA
   transition: filter 0.2s ease, transform 0.2s ease;
 }
 
-.btn-auto{ background-color: var(--btn-auto-bg); }
-.btn-manual{ background-color: var(--btn-manual-bg); }
+.btn.auto { background-color: var(--btn-auto-bg); }
+.btn.manual { background-color: var(--btn-manual-bg); }
 .btn.ligar { background-color: var(--btn-on-bg);}
 .btn.desligar { background-color: var(--btn-off-bg); }
 .btn.sair { background-color: var(--btn-exit-bg); }
@@ -230,6 +235,7 @@ body::after {
 
   background-color: var(--footer-bg);
   color: var(--footer-text);
+
   font-size: clamp(0.9rem, 2vw, 1rem);
   z-index: 1000;
 
