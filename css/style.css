@@ -162,8 +162,8 @@ BOTÕES DO SISTEMA
   transition: filter 0.2s ease, transform 0.2s ease;
 }
 
-.btn-auto{ background-color: var(--btn-auto-bg); }
-.btn-manual{ background-color: var(--btn-manual-bg); }
+.btn.auto { background-color: var(--btn-auto-bg); }
+.btn.manual { background-color: var(--btn-manual-bg); }
 .btn.ligar { background-color: var(--btn-on-bg);}
 .btn.desligar { background-color: var(--btn-off-bg); }
 .btn.sair { background-color: var(--btn-exit-bg); }
