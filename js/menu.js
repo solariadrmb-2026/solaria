@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ====================================================
     CAMINHO DO MENU
     ==================================================== */
-    const menuPath = "components/menu.html";
+    const menuPath = "menu.html";
 
     fetch(menuPath) 
     .then(res => {
