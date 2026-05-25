@@ -35,6 +35,21 @@ document.addEventListener("DOMContentLoaded", () => {
         const dashboardItem = container.querySelector(".painel-item");
         const adminItem = container.querySelector(".admin-item");
 
+        /*========== Bhutan DARK MODE==============*/
+
+        const darkToggle = container.querySelector("#darkToggle");
+        function atualizarIcone() {
+            const dark = document.body.classList.contains("theme-dark");
+            darkToggle.textContent = dark ? "☀️" : "🌙";
+        }
+
+        if(darkToggle) {
+            darkToggle.addEventListener("click",() => {
+                document.body.classList.toggle("theme-dark");
+                atualizarIcone();
+            });
+            atualizarIcone()
+        }
         /* ================================================
         MENU MOBILE
         ================================================ */
