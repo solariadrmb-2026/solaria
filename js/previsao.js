@@ -4,7 +4,7 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cidade}&appid=${API_
 
 .then(response => response.json())
 .then(data =>{
-    const previsaoDiv = document.getElementByld("previsao");
+    const previsaoDiv = document.getElementById("previsao");
     previsaoDiv.innerHTML ="";
 
     for(let i=0; i < 32; i += 8){
