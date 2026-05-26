@@ -1,31 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Solaria | Sistema</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS-->
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Solaria | Sistema</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <!--MENU--> 
+  <!--MENU-->
   <div id="menu"></div>
-  
-  <main class="container">
-    <h1>Sobre o Sistema</h1>
+  <main class="container pagina-dados">
+    <h1>⚙️ Sobre o Sistema</h1>
+    <!-- CARD 01-->
+    <selection class="card-box">
+      <h2>🌱 O que é o Solaria?</h2>
 
-    <div id="conteudo" class="lista-itens">
-        <p>Carregando...</p>
+      <div class="sistem">
+        <p>
+          O Solaria é um sistema web inteligente desenvolvido para o
+          monitoramento e automação da irrigação agrícola e hortas comunitárias,
+          utilizando tecnologias de IoT,sensores inteligentes e integração em
+          tempo real para otimizar o uso da água e melhorar a eficiência no cultivo.
+        </p>
+      </div>
+    </selection>
+
+    <!--CARD 02-->
+    <section class="card-box">
+
+      <h2>📡 Tecnologias Utilizadas</h2>
+
+      <div class="dados-grid">
+        <div class="sistem">
+          <h3>ESP32</h3>
+          <p>Microcontrolador responsável pela comunicação do sistema.</p>
         </div>
-        </main>
 
-        <!--===SCRIPTS====-->
-        <script type="module" src="js/firebase.js"></script>
-        <script type="module" src="js/menu.js"></script>
-        <script src="js/theme.js"></script>
-    
+        <div class="sistem">
+          <h3> Firebase</h3>
+          <p>Banco de dados em tempo real para armazenamento.</p>
+        </div>
+
+        <div class="sistem">
+          <h3>HTML</h3>
+          <p>Estrutura das páginas do sistema web.</p>
+        </div>
+
+        <div class="sistem">
+          <h3>CSS</h3>
+          <p>Estilização e responsividade das páginas.</p>
+        </div>
+
+        <div class="sistem">
+          <h3>JavaScript</h3>
+          <p>Interatividade e comunicação dinâmica do sistema.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!--CARD 03-->
+    <section class="card-box">
+      <h2>📈 Funcionalidades</h2>
+      <div class="dados-grid">
+
+        <div class="sistem">
+          <h3>Monitoramento</h3>
+          <p>Acompanhamento dos sensores em tempo real.</p>
+        </div>
+
+        <div class="sistem">
+          <h3> Irrigação</h3>
+          <p>Controle automático da irrigação da horta.</p>
+        </div>
+
+        <div class="sistem">
+          <h3>Dashboard</h3>
+          <p>Visualização prática das informações do sistema.</p>
+        </div>
+
+        <div class="sistem">
+          <h3>Alertas</h3>
+          <p>Notificação sobre o estado dos sensores.</p>
+        </div>
+
+        <div class="sistem">
+          <h3>Resposnsabilidade</h3>
+          <p>Compatibilidade com computadores e celulares.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--===SCRIPTS====-->
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/menu.js"></script>
+  <script src="js/theme.js"></script>
+
 </body>
 </html>
