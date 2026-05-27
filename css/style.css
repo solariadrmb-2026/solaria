@@ -286,7 +286,7 @@ PÁGINAS PÚBLICAS - SISTEMA, PROJETO, EQUIPE E CONTATOS
 /*MEMBROS*/
 .sistem{
   background: var(--color-bg);
-  border-radius: 18px;
+  border-radius: 14px;
   padding: 22px;
   text-align: center;
 }
