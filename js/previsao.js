@@ -1,4 +1,4 @@
-const API_KEY ="dac3c638b243866b7b24164d899fd03b";
+const API_KEY ="aa21b373410f1e9c02ee2f9a033bdf72";
 const cidade ="Sao Miguel do Tapuio";
 fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cidade}&appid=${API_KEY}&lang=pt_br&units=metric`)
 
