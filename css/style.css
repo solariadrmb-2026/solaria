@@ -191,6 +191,7 @@ BOTÕES DO SISTEMA
 .btn{
   padding: 1rem;
   font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--btn-text);
   border: none;
   border-radius: var(--btn-radius);
   cursor: pointer;
