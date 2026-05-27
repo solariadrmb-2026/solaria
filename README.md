@@ -66,6 +66,11 @@ solaria/
 │
 ├── index.html
 ├── dashboard.html
+├── contatos.html
+├── equipe.html
+├── menu.html
+├── projeto.html
+├── sistema.html
 │
 ├── css/
 │   ├── style.css
@@ -76,6 +81,7 @@ solaria/
 │   ├── login.js
 │   ├── dashboard.js
 │   ├── firebase.js
+│   ├── previsao.js
 │   ├── menu.js
 │   └── theme.js
 │
