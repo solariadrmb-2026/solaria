@@ -16,10 +16,10 @@ window.login = function () {
   msg.innerText = "Conectando...";
   msg.style.color = "black"; 
 
-  signlnWithEmailAndPassword(auth, email, senha)
+  signInWithEmailAndPassword(auth, email, senha)
    .then(() => {
-     localStorage.setltem("logado", "true");
-     msg.innerText = "Login realizado com sucesso!",
+     localStorage.setItem("logado", "true");
+     msg.innerText = "Login realizado com sucesso!";
        msg.style.color = "green";
 
          setTimeout(() =>{
