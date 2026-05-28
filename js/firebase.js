@@ -12,6 +12,7 @@ from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
 const firebaseConfig = {
   apiKey: "AIzaSyBdL9LRgnuHn2jvzf8jL9wnoEaahs50j2w",
   authDomain: "solaria-smt.firebaseapp.com",
+  databaseURL: "https://solaria-smt-default-rtdb.firebaseio.com",
   projectId: "solaria-smt",
   storageBucket: "solaria-smt.firebasestorage.app",
   messagingSenderId: "546948445297",

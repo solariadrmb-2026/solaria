@@ -1,11 +1,13 @@
+// ================= LOGIN SEGURO =================
+import { auth } from "./firebase.js";
+import { signInWithEmailAndPassword } 
+from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
 window.login = function () {
 
-  const email =
-    document.getElementById("email").value.trim();
-  const senha =
-    document.getElementById("senha").value.trim();
-  const msg =
-    document.getElementById("msg");
+  const email = document.getElementById("email").value.trim();
+  const senha = document.getElementById("senha").value.trim();
+  const msg = document.getElementById("msg");
 
   if (!email || !senha) {
     msg.innerText = "Preencha email e senha";
