@@ -16,11 +16,11 @@ PROTEÇÃO DE ROTA
 onAuthStateChanged(auth, user => {
   if(!user) {
 
-localStorage.removeltem("logado");
+localStorage.removeItem("logado");
    window.location.href="index.html";
      return;    
   }
-  localStorage.setltem("logado", "true");
+  localStorage.setItem("logado", "true");
   iniciarTempoReal();
 });
 
@@ -89,7 +89,7 @@ function iniciarTempoReal() {
   window.logout= function() {
     signOut(auth).then(() => {
 
-  localStorage.removeltem("logado");
+  localStorage.removeItem("logado");
     window.location.href=
   "index.html";
     });
@@ -137,16 +137,16 @@ function iniciarTempoReal() {
     const luxFormatado=
   Number(valor).toFixed(1);
     
-    el.innerText='${luxFormatado}${sufixo}${classificacao}';
+    el.innerText=`${luxFormatado}${sufixo}${classificacao}`;
     return;
   }
 
   //Para demais sensores
 
-  el.innerText='${valor}${sufixo}';
+  el.innerText=`${valor}${sufixo}`;
   }
 
   function atualizarTexto(id, texto) {
-    const el= document.get.getElementById(id);
+    const el= document.getElementById(id);
     if(el) el.innerText= texto;
   }
