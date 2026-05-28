@@ -1,11 +1,11 @@
 window.login = function () {
 
   const email =
-    document.getElementByld("email").value.trim();
+    document.getElementById("email").value.trim();
   const senha =
-    document.getElementByld("senha").value.trim();
+    document.getElementById("senha").value.trim();
   const msg =
-    document.getElememtByld("msg");
+    document.getElementById("msg");
 
   if (!email || !senha) {
     msg.innerText = "Preencha email e senha";
