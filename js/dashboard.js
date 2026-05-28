@@ -101,7 +101,7 @@ function iniciarTempoReal() {
 
   function atualizar(id, valor, sufixo="") {
     const el=
-  document.getElementByld(id);
+  document.getElementById(id);
     if(!el) return;
 
     if(valor === undefined || valor === null) {
@@ -147,6 +147,6 @@ function iniciarTempoReal() {
   }
 
   function atualizarTexto(id, texto) {
-    const el= document.get.ElementByld(id);
+    const el= document.get.getElementById(id);
     if(el) el.innerText= texto;
   }
